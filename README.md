@@ -28,3 +28,17 @@ docker start -a 00f9ac73bae181a50276ff85be8584c8b0f76db62afe0bcf3e4f70e2da581820
 -a is a watch the output and print it
 
 
+docker start -a container-id-name
+
+docker system prune - will delete couple of things and all containers
+
+
+Log outputs:
+docker create busybox echo hy there
+docker start 8100c6b5ab28efe4545e5e59619ef55169d8bd6650ccb88262181ed288ce4279
+docker logs --details 8100c6b5ab28efe4545e5e59619ef55169d8bd6650ccb88262181ed288ce4279
+
+execute commands in running containers
+docker exec -it <container id> <command>
+
+
