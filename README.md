@@ -41,4 +41,11 @@ docker logs --details 8100c6b5ab28efe4545e5e59619ef55169d8bd6650ccb88262181ed288
 execute commands in running containers
 docker exec -it <container id> <command>
 
+Redis:
 
+docker run redis
+another terminal:
+    docker ps
+    docker exec -it 42217609693e redis-cli
+    set myvalue 5
+    get myvalue
