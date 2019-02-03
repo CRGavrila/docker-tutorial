@@ -49,3 +49,18 @@ another terminal:
     docker exec -it 42217609693e redis-cli
     set myvalue 5
     get myvalue
+
+    >>
+    docker exec -it 42217609693e sh
+    will go to linux container and to exit: ctrl+d or ctrl+c
+
+    sh, bash, powershell, zsh: command processor
+
+    Building a dockerfile:
+
+    In redis-image folder is the workaround !!!
+
+    Create file: Dockerfile
+    Add the code
+    and build the image: docker build .
+
