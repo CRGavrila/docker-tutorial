@@ -63,4 +63,9 @@ another terminal:
     Create file: Dockerfile
     Add the code
     and build the image: docker build .
+    and run: docker run 97f231db5ced
+
+    added a second RUN cmd and docker uses a cache and will not download previous packages... ONLY the order of RUN cmds will not change!!!!
+
+
 
