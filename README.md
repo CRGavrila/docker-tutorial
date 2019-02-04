@@ -67,5 +67,10 @@ another terminal:
 
     added a second RUN cmd and docker uses a cache and will not download previous packages... ONLY the order of RUN cmds will not change!!!!
 
+    Adding tags to images:
+    docker build -t crgavrila/name:latest .
+    docker run crgavrila/name
+
+
 
 
