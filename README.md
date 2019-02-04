@@ -71,6 +71,9 @@ another terminal:
     docker build -t crgavrila/name:latest .
     docker run crgavrila/name
 
+Simple node project: to folder simple-node:
+docker build -t crgavrila/simple-node .
+docker run -p 8081:8081 crgavrila/simple-node
 
 
 
