@@ -73,7 +73,30 @@ another terminal:
 
 Simple node project: to folder simple-node:
 docker build -t crgavrila/simple-node .
-docker run -p 8081:8081 crgavrila/simple-node
+docker run -p 8080:8080 crgavrila/simple-node
+
+Adding a working directory with following cmd in Dockerfile: WORKDIR /usr/app
+
+In another terminal you can run to check the shell:
+docker exec -it <docker_id> sh
+
+Cache busting and rebuilds:
+    TO avoid install all dependency while you changed something in files (ex. index.js, etc)
+    old cmd: COPY ./ ./
+             RUN npm install
+    now: COPY ./package.json
+         RUN npm install
+         COPY ./ ./
+
+
+###########       Second app          ###############
+Display number of visitors on a web page with:
+    -node
+    -redis
+
+check the readme inf second-node
+
+
 
 
 
