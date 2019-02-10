@@ -1,4 +1,6 @@
 #second-node
 
-docker build -t crgavrila/visits:latest .
-docker run crgavrila/visits
+docker-compose build
+docker-compose up
+
+or run in background: docker-compose up -d

@@ -96,6 +96,9 @@ Display number of visitors on a web page with:
 
 check the readme inf second-node
 
+when has tag: -d , it will run the container in background
+    ex: docker run -d <container_id>
+
 
 
 
