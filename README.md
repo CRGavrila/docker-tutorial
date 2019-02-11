@@ -100,6 +100,13 @@ when has tag: -d , it will run the container in background
     ex: docker run -d <container_id>
 
 
+DOCKER-COMPOSE:
+build and run: docker-compose up --build
+
+project 3:
+check new project: production-workflow
+
+
 
 
 
